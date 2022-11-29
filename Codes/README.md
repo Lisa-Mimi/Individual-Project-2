@@ -2,4 +2,4 @@ Please note that the main.cpp file imports the GetPath.cpp file while GetPath.cp
 
 Therefore all files must be stored in the same project file
 
-Additionally all code is run in the main.cpp file;
+Additionally all code is run in the main.cpp file
