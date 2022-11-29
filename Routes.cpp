@@ -6,10 +6,9 @@
 #include<list>
 #include<tuple>
 using namespace std;
-// list<tuple<string, string>>
-list<tuple<string, string, string, string>> flight_info_list;
-list<tuple<string, string>> Get_routes() {
-    list<tuple<string, string>> routes_list;
+
+list<tuple<string, string, string,string>> Get_routes() {
+    list<tuple<string, string, string, string>> routes_list;
     string file_name = "routes.csv";
     ifstream my_file;
     my_file.open(file_name);
@@ -26,15 +25,11 @@ list<tuple<string, string>> Get_routes() {
         getline(stream, codeshare, ',');
         getline(stream, stops, ',');
         getline(stream, equipment, ',');
-        tuple<string, string> route = make_tuple(source_airport_code, destination_airport_code);
-        tuple<string, string, string, string> flight_info;
-        flight_info = make_tuple(source_airport_code,destination_airport_code,airline_code,stops);
-        flight_info_list.push_back(flight_info);
+        tuple<string, string, string, string> route ;
+        route = make_tuple(source_airport_code, destination_airport_code,airline_code,stops);
         routes_list.push_back(route);
     }
     my_file.close();
     return routes_list;
 }
-list<tuple<string, string, string, string>> get_flight_info(){
-    return flight_info_list;
-}
+
