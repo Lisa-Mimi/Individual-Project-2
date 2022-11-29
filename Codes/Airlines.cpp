@@ -21,4 +21,5 @@ void GetAirlines(){
         getline(stream, Country, ',');
         getline(stream, Active, ',');
     }
+    my_file.close();
 }
