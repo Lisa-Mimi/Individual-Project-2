@@ -1,5 +1,7 @@
 # Individual-Project-2
 
-Kindly please note that the main.cpp file imports the GetPath.cpp file which also imports Airports.cpp, Routes and Airlines.cpp files
+Folder Codes has code implementation for our group project and input and output file
 
-Kindly please store them in same project folder to enable above implementation
+Folder Project Reports has project reports for both Lisa Gihozo and Miriam Uwingabiye
+
+Folder Datasets has our routes, airports and airlines files
